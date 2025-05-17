@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		097B421E2DD10658007CBBE2 /* PolarHeartRateAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7172C922DA55E15007ADD4C /* PolarHeartRateAppApp.swift */; };
+		097B42222DD106F3007CBBE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42212DD106EA007CBBE2 /* ContentView.swift */; };
+		097B42232DD10741007CBBE2 /* PolarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42132DD1011E007CBBE2 /* PolarManager.swift */; };
+		097B42242DD107B6007CBBE2 /* MovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42162DD10151007CBBE2 /* MovingAverage.swift */; };
+		097B42262DD107C2007CBBE2 /* AccelerometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42142DD10131007CBBE2 /* AccelerometerManager.swift */; };
+		097B42272DD107CA007CBBE2 /* SingleDataChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B421A2DD10438007CBBE2 /* SingleDataChartView.swift */; };
+		097B42282DD107D0007CBBE2 /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42192DD103BE007CBBE2 /* DeviceRowView.swift */; };
+		097B42292DD107D5007CBBE2 /* AthleteChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42182DD102F2007CBBE2 /* AthleteChartView.swift */; };
+		097B422A2DD107DB007CBBE2 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42172DD102D2007CBBE2 /* DashboardView.swift */; };
+		097B422B2DD107E0007CBBE2 /* ChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B421C2DD1048D007CBBE2 /* ChartStyle.swift */; };
+		097B422C2DD107E6007CBBE2 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B421B2DD10467007CBBE2 /* TimeUtils.swift */; };
+		097B42812DD23CF1007CBBE2 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B42802DD23CD4007CBBE2 /* DataModels.swift */; };
+		D7172C972DA55E16007ADD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7172C962DA55E16007ADD4C /* Assets.xcassets */; };
+		D71734312DA56D8C007ADD4C /* PolarBleSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D71734302DA56D8C007ADD4C /* PolarBleSdk */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7172C9D2DA55E16007ADD4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7172C872DA55E15007ADD4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7172C8E2DA55E15007ADD4C;
+			remoteInfo = PolarHeartRateApp;
+		};
+		D7172CA72DA55E16007ADD4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7172C872DA55E15007ADD4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7172C8E2DA55E15007ADD4C;
+			remoteInfo = PolarHeartRateApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		097B42132DD1011E007CBBE2 /* PolarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarManager.swift; sourceTree = "<group>"; };
+		097B42142DD10131007CBBE2 /* AccelerometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerManager.swift; sourceTree = "<group>"; };
+		097B42162DD10151007CBBE2 /* MovingAverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingAverage.swift; sourceTree = "<group>"; };
+		097B42172DD102D2007CBBE2 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		097B42182DD102F2007CBBE2 /* AthleteChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteChartView.swift; sourceTree = "<group>"; };
+		097B42192DD103BE007CBBE2 /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
+		097B421A2DD10438007CBBE2 /* SingleDataChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDataChartView.swift; sourceTree = "<group>"; };
+		097B421B2DD10467007CBBE2 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		097B421C2DD1048D007CBBE2 /* ChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartStyle.swift; sourceTree = "<group>"; };
+		097B42212DD106EA007CBBE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		097B42802DD23CD4007CBBE2 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		D7172C8F2DA55E15007ADD4C /* PolarHeartRateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolarHeartRateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7172C922DA55E15007ADD4C /* PolarHeartRateAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarHeartRateAppApp.swift; sourceTree = "<group>"; };
+		D7172C962DA55E16007ADD4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7172C9C2DA55E16007ADD4C /* PolarHeartRateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarHeartRateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7172CA62DA55E16007ADD4C /* PolarHeartRateAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarHeartRateAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7172C8C2DA55E15007ADD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				D71734312DA56D8C007ADD4C /* PolarBleSdk in Frameworks */,
+			);
+		};
+		D7172C992DA55E16007ADD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		D7172CA32DA55E16007ADD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		097B420E2DD10071007CBBE2 /* CORE */ = {
+			isa = PBXGroup;
+			children = (
+				097B42162DD10151007CBBE2 /* MovingAverage.swift */,
+				097B42142DD10131007CBBE2 /* AccelerometerManager.swift */,
+				097B42132DD1011E007CBBE2 /* PolarManager.swift */,
+			);
+			path = CORE;
+			sourceTree = "<group>";
+		};
+		097B420F2DD10088007CBBE2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				097B421A2DD10438007CBBE2 /* SingleDataChartView.swift */,
+				097B42192DD103BE007CBBE2 /* DeviceRowView.swift */,
+				097B42182DD102F2007CBBE2 /* AthleteChartView.swift */,
+				097B42172DD102D2007CBBE2 /* DashboardView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		097B42102DD10098007CBBE2 /* UTILS */ = {
+			isa = PBXGroup;
+			children = (
+				097B421C2DD1048D007CBBE2 /* ChartStyle.swift */,
+				097B421B2DD10467007CBBE2 /* TimeUtils.swift */,
+			);
+			path = UTILS;
+			sourceTree = "<group>";
+		};
+		097B427F2DD23CBD007CBBE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				097B42802DD23CD4007CBBE2 /* DataModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7172C862DA55E15007ADD4C = {
+			isa = PBXGroup;
+			children = (
+				097B42212DD106EA007CBBE2 /* ContentView.swift */,
+				D7172C922DA55E15007ADD4C /* PolarHeartRateAppApp.swift */,
+				D7172C962DA55E16007ADD4C /* Assets.xcassets */,
+				097B427F2DD23CBD007CBBE2 /* Models */,
+				097B420E2DD10071007CBBE2 /* CORE */,
+				D7172C902DA55E15007ADD4C /* Products */,
+				097B420F2DD10088007CBBE2 /* UI */,
+				097B42102DD10098007CBBE2 /* UTILS */,
+			);
+			sourceTree = "<group>";
+		};
+		D7172C902DA55E15007ADD4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7172C8F2DA55E15007ADD4C /* PolarHeartRateApp.app */,
+				D7172C9C2DA55E16007ADD4C /* PolarHeartRateAppTests.xctest */,
+				D7172CA62DA55E16007ADD4C /* PolarHeartRateAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7172C8E2DA55E15007ADD4C /* PolarHeartRateApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7172CB02DA55E16007ADD4C /* Build configuration list for PBXNativeTarget "PolarHeartRateApp" */;
+			buildPhases = (
+				D7172C8B2DA55E15007ADD4C /* Sources */,
+				D7172C8C2DA55E15007ADD4C /* Frameworks */,
+				D7172C8D2DA55E15007ADD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			name = PolarHeartRateApp;
+			packageProductDependencies = (
+				D71734302DA56D8C007ADD4C /* PolarBleSdk */,
+			);
+			productName = PolarHeartRateApp;
+			productReference = D7172C8F2DA55E15007ADD4C /* PolarHeartRateApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7172C9B2DA55E16007ADD4C /* PolarHeartRateAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7172CB32DA55E16007ADD4C /* Build configuration list for PBXNativeTarget "PolarHeartRateAppTests" */;
+			buildPhases = (
+				D7172C982DA55E16007ADD4C /* Sources */,
+				D7172C992DA55E16007ADD4C /* Frameworks */,
+				D7172C9A2DA55E16007ADD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7172C9E2DA55E16007ADD4C /* PBXTargetDependency */,
+			);
+			name = PolarHeartRateAppTests;
+			productName = PolarHeartRateAppTests;
+			productReference = D7172C9C2DA55E16007ADD4C /* PolarHeartRateAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7172CA52DA55E16007ADD4C /* PolarHeartRateAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7172CB62DA55E16007ADD4C /* Build configuration list for PBXNativeTarget "PolarHeartRateAppUITests" */;
+			buildPhases = (
+				D7172CA22DA55E16007ADD4C /* Sources */,
+				D7172CA32DA55E16007ADD4C /* Frameworks */,
+				D7172CA42DA55E16007ADD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7172CA82DA55E16007ADD4C /* PBXTargetDependency */,
+			);
+			name = PolarHeartRateAppUITests;
+			productName = PolarHeartRateAppUITests;
+			productReference = D7172CA62DA55E16007ADD4C /* PolarHeartRateAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7172C872DA55E15007ADD4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					D7172C8E2DA55E15007ADD4C = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					D7172C9B2DA55E16007ADD4C = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = D7172C8E2DA55E15007ADD4C;
+					};
+					D7172CA52DA55E16007ADD4C = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = D7172C8E2DA55E15007ADD4C;
+					};
+				};
+			};
+			buildConfigurationList = D7172C8A2DA55E15007ADD4C /* Build configuration list for PBXProject "PolarHeartRateApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7172C862DA55E15007ADD4C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D717342F2DA56D8C007ADD4C /* XCRemoteSwiftPackageReference "polar-ble-sdk" */,
+			);
+			preferredProjectObjectVersion = 90;
+			productRefGroup = D7172C902DA55E15007ADD4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7172C8E2DA55E15007ADD4C /* PolarHeartRateApp */,
+				D7172C9B2DA55E16007ADD4C /* PolarHeartRateAppTests */,
+				D7172CA52DA55E16007ADD4C /* PolarHeartRateAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7172C8D2DA55E15007ADD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				D7172C972DA55E16007ADD4C /* Assets.xcassets in Resources */,
+			);
+		};
+		D7172C9A2DA55E16007ADD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		D7172CA42DA55E16007ADD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7172C8B2DA55E15007ADD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				097B42272DD107CA007CBBE2 /* SingleDataChartView.swift in Sources */,
+				097B42282DD107D0007CBBE2 /* DeviceRowView.swift in Sources */,
+				097B422B2DD107E0007CBBE2 /* ChartStyle.swift in Sources */,
+				097B42222DD106F3007CBBE2 /* ContentView.swift in Sources */,
+				097B42262DD107C2007CBBE2 /* AccelerometerManager.swift in Sources */,
+				097B42242DD107B6007CBBE2 /* MovingAverage.swift in Sources */,
+				097B422C2DD107E6007CBBE2 /* TimeUtils.swift in Sources */,
+				097B42812DD23CF1007CBBE2 /* DataModels.swift in Sources */,
+				097B42232DD10741007CBBE2 /* PolarManager.swift in Sources */,
+				097B42292DD107D5007CBBE2 /* AthleteChartView.swift in Sources */,
+				097B422A2DD107DB007CBBE2 /* DashboardView.swift in Sources */,
+				097B421E2DD10658007CBBE2 /* PolarHeartRateAppApp.swift in Sources */,
+			);
+		};
+		D7172C982DA55E16007ADD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		D7172CA22DA55E16007ADD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7172C9E2DA55E16007ADD4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7172C8E2DA55E15007ADD4C /* PolarHeartRateApp */;
+			targetProxy = D7172C9D2DA55E16007ADD4C /* PBXContainerItemProxy */;
+		};
+		D7172CA82DA55E16007ADD4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7172C8E2DA55E15007ADD4C /* PolarHeartRateApp */;
+			targetProxy = D7172CA72DA55E16007ADD4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D7172CAE2DA55E16007ADD4C /* Debug configuration for PBXProject "PolarHeartRateApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7172CAF2DA55E16007ADD4C /* Release configuration for PBXProject "PolarHeartRateApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7172CB12DA55E16007ADD4C /* Debug configuration for PBXNativeTarget "PolarHeartRateApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "uso ble";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "uso ble";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tko.PolarHeartRateApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D7172CB22DA55E16007ADD4C /* Release configuration for PBXNativeTarget "PolarHeartRateApp" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "uso ble";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "uso ble";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tko.PolarHeartRateApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		D7172CB42DA55E16007ADD4C /* Debug configuration for PBXNativeTarget "PolarHeartRateAppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tko.PolarHeartRateAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolarHeartRateApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PolarHeartRateApp";
+			};
+			name = Debug;
+		};
+		D7172CB52DA55E16007ADD4C /* Release configuration for PBXNativeTarget "PolarHeartRateAppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tko.PolarHeartRateAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolarHeartRateApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PolarHeartRateApp";
+			};
+			name = Release;
+		};
+		D7172CB72DA55E16007ADD4C /* Debug configuration for PBXNativeTarget "PolarHeartRateAppUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tko.PolarHeartRateAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PolarHeartRateApp;
+			};
+			name = Debug;
+		};
+		D7172CB82DA55E16007ADD4C /* Release configuration for PBXNativeTarget "PolarHeartRateAppUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9F8D583GBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tko.PolarHeartRateAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PolarHeartRateApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7172C8A2DA55E15007ADD4C /* Build configuration list for PBXProject "PolarHeartRateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7172CAE2DA55E16007ADD4C /* Debug configuration for PBXProject "PolarHeartRateApp" */,
+				D7172CAF2DA55E16007ADD4C /* Release configuration for PBXProject "PolarHeartRateApp" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D7172CB02DA55E16007ADD4C /* Build configuration list for PBXNativeTarget "PolarHeartRateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7172CB12DA55E16007ADD4C /* Debug configuration for PBXNativeTarget "PolarHeartRateApp" */,
+				D7172CB22DA55E16007ADD4C /* Release configuration for PBXNativeTarget "PolarHeartRateApp" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D7172CB32DA55E16007ADD4C /* Build configuration list for PBXNativeTarget "PolarHeartRateAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7172CB42DA55E16007ADD4C /* Debug configuration for PBXNativeTarget "PolarHeartRateAppTests" */,
+				D7172CB52DA55E16007ADD4C /* Release configuration for PBXNativeTarget "PolarHeartRateAppTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D7172CB62DA55E16007ADD4C /* Build configuration list for PBXNativeTarget "PolarHeartRateAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7172CB72DA55E16007ADD4C /* Debug configuration for PBXNativeTarget "PolarHeartRateAppUITests" */,
+				D7172CB82DA55E16007ADD4C /* Release configuration for PBXNativeTarget "PolarHeartRateAppUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D717342F2DA56D8C007ADD4C /* XCRemoteSwiftPackageReference "polar-ble-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/polarofficial/polar-ble-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D71734302DA56D8C007ADD4C /* PolarBleSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D717342F2DA56D8C007ADD4C /* XCRemoteSwiftPackageReference "polar-ble-sdk" */;
+			productName = PolarBleSdk;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D7172C872DA55E15007ADD4C /* Project object */;
+}
