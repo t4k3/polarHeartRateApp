@@ -20,7 +20,7 @@ class AccelerometerManager {
         let interval = now.timeIntervalSince(lastJumpTime)
         if z > jumpThresholdZ && interval > Double(minJumpIntervalMs) / 1000.0 {
             lastJumpTime = now
-            let jump = MarkedPoint(timestamp: now, label: "Jump", value: z)
+            let jump = MarkedPoint(timestamp: now, value: z)
             polarManager.connectedDevices[deviceId]?.jumpPoints.append(jump)
         }
     }
